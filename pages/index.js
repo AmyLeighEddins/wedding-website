@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -26,33 +27,41 @@ export default function Home() {
             </div>
           </a>
 
-          <a href="/details" className={styles.card}>
-            <div className={styles.rainbowText}>
-              <Image src="/daria.gif" alt="EVENT DETAILS" width={500} height={500} />
-              <div>EVENT DETAILS</div>
+          <Link href="/details">
+            <div className={styles.card}>
+              <div className={styles.rainbowText}>
+                <Image src="/daria.gif" alt="DETAILS" width={500} height={500} />
+                <div>DETAILS</div>
+              </div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/registry" className={styles.card}>
-            <div className={styles.rainbowText}>
-              <Image src="/registry.gif" alt="RESGISTRY" width={500} height={500} />
-              <div>REGISTRY</div>
+          <Link href="/registry">
+            <div className={styles.card}>
+              <div className={styles.rainbowText}>
+                <Image src="/registry.gif" alt="RESGISTRY" width={500} height={500} />
+                <div>REGISTRY</div>
+              </div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/story" className={styles.card}>
-            <div className={styles.rainbowText}>
-              <Image src="/spongebook.gif" alt="OUR STORY" width={500} height={500} />
-              <div>OUR STORY</div>
+          <Link href="/story">
+            <div className={styles.card}>
+              <div className={styles.rainbowText}>
+                <Image src="/spongebook.gif" alt="OUR STORY" width={500} height={500} />
+                <div>OUR STORY</div>
+              </div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/party" className={styles.card}>
-            <div className={styles.rainbowText}>
-              <Image src="/wedding.gif" alt="WEDDING PARTY" width={500} height={500} />
-              <div>WEDDING PARTY</div>
+          <Link href="/party" className={styles.card}>
+            <div className={styles.card}>
+              <div className={styles.rainbowText}>
+                <Image src="/wedding.gif" alt="WEDDING PARTY" width={500} height={500} />
+                <div>WEDDING PARTY</div>
+              </div>
             </div>
-          </a>
+          </Link>
 
           <a href="https://open.spotify.com/playlist/2gfmCMmHwrK4cSoY6vGu1W" className={styles.card}>
             <div className={styles.rainbowText}>
