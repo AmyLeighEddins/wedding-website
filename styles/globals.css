@@ -5,6 +5,21 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: url('/johmy.gif');
+  cursor: url('/cursor.png'), auto;
+}
+
+body::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
 }
 
 a {
@@ -16,13 +31,74 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-    background-image: url('/johmy.gif');
-  }
+/* React95 */
+
+.window-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: -1px;
+  margin-top: -1px;
+  transform: rotateZ(45deg);
+  position: relative;
+}
+
+.close-icon::before,
+.close-icon::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+}
+
+.close-icon:before {
+  height: 100%;
+  width: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close-icon:after {
+  height: 3px;
+  width: 100%;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.window {
+  width: 400px;
+  min-height: 200px;
+  margin-top: 100px;
+}
+
+.window:nth-child(2) {
+  margin: 2rem;
+}
+
+.footer {
+  display: block;
+  margin: 0.25rem;
+  height: 31px;
+  line-height: 31px;
+  padding-left: 0.25rem;
+}
+
+.menu-item {
+  justify-content: left !important;
+}
+
+.menu-item-image {
+  width: 16px !important;
+  height: 16px !important;
+  position: inherit !important;
+}
+
+.menu-item-text {
+  margin-left: 0.5rem;
 }

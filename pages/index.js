@@ -10,7 +10,7 @@ export default function Home() {
         <title>Johmy Beldins Wedding</title>
         <meta name="description" content="Info about our wedding" />
         {/* TODO: change icon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/win95.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -18,6 +18,12 @@ export default function Home() {
         <h1 className={styles.title}>
           <Image src="/title.gif" alt="Johmy Beldins" width={1000} height={100} />
         </h1>
+
+        <a href="/react95" className={styles.card}>
+          <div className={styles.rainbowText}>
+            <div>Try out React95 version</div>
+          </div>
+        </a>
 
         <div className={styles.grid}>
           <a href="mailto:amyleigheddins@gmail.com,doomedforlife91@gmail.com?subject = Wedding RSVP&body = YES/NO" className={styles.card}>
