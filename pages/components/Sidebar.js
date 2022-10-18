@@ -7,7 +7,7 @@ export default function Sidebar() {
   return (
     <div className={styles.sidebar}>
       {ads.map((ad) => (
-        <Image src={`/${ad}.gif`} key={ad} width={'100%'} height={31} />
+        <Image src={`/${ad}.gif`} key={ad} alt={ad} width={'100%'} height={31} />
       ))}
     </div>
   )

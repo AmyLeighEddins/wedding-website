@@ -1,4 +1,6 @@
-[
+export const explanation = "We will not have a registry since we have everything we need already. Instead we'd like you to give to our favorite charities!";
+
+export const charities = [
   {
     "link": "https://www.aclu.org/issues/racial-justice",
     "title": "American Civil Liberties Union"

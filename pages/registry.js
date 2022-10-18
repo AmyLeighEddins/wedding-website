@@ -2,7 +2,7 @@ import styles from '../styles/Registry.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import charities from './data/registry.json';
+import { charities, explanation } from '../data/registry';
 import Sidebar from './components/Sidebar.js';
 
 export default function Registry() {
@@ -12,7 +12,7 @@ export default function Registry() {
         <div className='rainbowText rainbowTextTitle'><h1 className='bouncing'>Registry</h1></div>
         <div className={styles.content}>
           <div className='text-area'>
-            <p>We will not have a registry since we have everything we need already. Instead we'd like you to give to our favorite charities!</p>
+            <p>{explanation}</p>
             {charities.map((charity) => (
               <h4 key={charity.title}>
                 <a href={charity.link}>{charity.title}</a>
