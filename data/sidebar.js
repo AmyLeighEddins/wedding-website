@@ -1,0 +1,1 @@
+export const ads = ['aimlink', 'atari', 'comiczone', 'geocities2', 'wizard', 'office97', 'now', 'mysql', 'ie', 'js', 'hotmail', 'classicgaming', 'braknow', 'java', 'leave', 'macmade', 'winrar', 'yahoomail', 'nvidia', 'ebay', 'drpepper', 'mp3', 'gameboy', 'adobe', 'geocities', 'google', 'mcaffee', 'cyberworld'];
