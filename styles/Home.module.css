@@ -79,6 +79,17 @@
   margin-left: 0.5rem;
 }
 
+.play {
+  background: pink;
+  text-align: center;
+  align-self: center;
+  padding: 5px;
+  margin: 10px auto;
+  display: flex;
+  color: yellow;
+  border: 5px inset plum;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
