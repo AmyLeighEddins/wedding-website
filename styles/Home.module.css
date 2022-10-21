@@ -3,7 +3,6 @@
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -86,7 +85,9 @@
   padding: 5px;
   margin: 10px auto;
   display: flex;
-  color: yellow;
+  color: darkmagenta;
+  font-size: large;
+  font-weight: 600;
   border: 5px inset plum;
 }
 
