@@ -1,11 +1,21 @@
 html,
-body {
+body, 
+button {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: url('/johmy.gif');
   cursor: url('/cursor.png'), auto;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 a {
@@ -120,6 +130,8 @@ a {
   border: 7px inset purple;
   padding: 1em;
   position: relative;
+  overflow: scroll;
+  max-height: 85vh;
 }
 
 /* Bouncing Text */

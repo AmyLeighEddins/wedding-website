@@ -1,6 +1,6 @@
 export const links = [
   {
-    href: 'mailto:amyleigheddins@gmail.com,doomedforlife91@gmail.com?subject = Wedding RSVP&body = YES/NO',
+    href: 'mailto:JohmyBeldinsWedding@gmail.com?subject = Wedding RSVP&body = YES/NO with a plus one if needed',
     title: 'RSVP',
     image: '/rsvp2.gif',
     newTab: true,
