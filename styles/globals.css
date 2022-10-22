@@ -24,6 +24,11 @@ a {
   align-items: flex-start;
 }
 
+.subPage {
+  display: flex;
+  overflow: hidden;
+}
+
 .rainbowText {
   background-color: #8000ff;
   color: #111;
