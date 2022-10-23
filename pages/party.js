@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import styles from '../styles/Party.module.css';
 
 import Sidebar from './components/Sidebar.js';
@@ -8,7 +10,9 @@ export default function Party() {
     <div className='subPage'>
       <Sidebar />
       <Content title='Wedding Party'>
-        <p>Test</p>
+        <div className='construction'>
+          <Image src='/construction.gif' width={400} height={200} />
+        </div>
       </Content>
     </div>
   )

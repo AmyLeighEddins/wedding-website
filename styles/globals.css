@@ -39,6 +39,10 @@ a {
   overflow: hidden;
 }
 
+.construction {
+  text-align: center;
+}
+
 .rainbowText {
   background-color: #8000ff;
   color: #111;

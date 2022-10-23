@@ -1,4 +1,6 @@
 export const details = {
+  decorationLeft: '*~*~*',
+  decorationRight: '*~*~*',
   title: 'You are invited to the wedding of:',
   names: 'John Bella and Amy Eddins',
   when: {

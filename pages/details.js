@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import styles from '../styles/Details.module.css';
 
 import { details } from '../data/details.js';
@@ -11,28 +13,44 @@ export default function Details() {
       <Sidebar />
       <Content title='Details'>
         <div className={styles.container}>
-          <h2>{details.title}</h2>
-          <h2>{details.names}</h2>
+          <div className={styles.title}>
+            <Image src='/invited.png' width={800} height={100} />
+          </div>
+
+          <div className={styles.names}>{`${details.decorationLeft}${details.names}${details.decorationRight}`}</div>
           
-          <h2>ON</h2>
-          <h2>{details.when.date}</h2>
-          <h2>{details.when.time}</h2>
+          <div className={styles.title}>
+            <Image src='/on.png' width={100} height={60} />
+          </div>
+          <div className={styles.descMed}>{details.when.date}</div>
+          <div className={styles.descMed}>{details.when.time}</div>
 
-          <h2>@</h2>
-          <h3>{details.where.name}*</h3>
-          <h3>{details.where.address}</h3>
-          <h3>{details.where.address2}</h3>
+          <div className={styles.title}>
+            <Image src='/at.png' width={100} height={60} />
+          </div>
+          <div className={styles.descSml}>{details.where.name}</div>
+          <div className={styles.descSml}>{details.where.address}</div>
+          <div className={styles.descSml}>{details.where.address2}</div>
+          <div className={styles.descXSm}>{details.where.gated}</div>
 
-          <h2>RSVP</h2>
-          <h3>{details.rsvp}</h3>
+          <div className={styles.title}>
+            <Image src='/rsvp.png' width={200} height={60} />
+          </div>
+          <div className={styles.descSml}>{details.rsvp}</div>
 
-          <h2>Attire:</h2>
-          <h3>{details.dressCode}</h3>
+          <div className={styles.title}>
+            <Image src='/attire.png' width={275} height={60} />
+          </div>
+          <div className={styles.descSml}>{details.dressCode}</div>
 
-          <h2>Reception:</h2>
-          <h3>{details.reception}</h3>
+          <div className={styles.title}>
+            <Image src='/reception.png' width={425} height={60} />
+          </div>
+          <div className={styles.descSml}>{details.reception}</div>
 
-          <h5>*{details.where.gated}</h5>
+          <div className={styles.gif}>
+            <Image src='/karaoke.gif' width={425} height={250} />
+          </div>
         </div>
       </Content>
     </div>
