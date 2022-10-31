@@ -1,25 +1,32 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
+import { useAppContext } from '../context/context';
 import { links } from '../data/common'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const [playing, setPlaying] = useState(false);
-  const musicPlayers = useRef(
+  const { playing, setPlaying } = useAppContext();
+  const musicPlayer = useRef(
     typeof Audio !== "undefined" ? new Audio("PowerRangers.mp3") : undefined
   );
 
   const clickPlay = () => {
-    if (playing) {
-      musicPlayers.current?.pause();
-    } else {
-      musicPlayers.current?.play();
+    if (!playing) {
+      musicPlayer.current?.play();
+      setPlaying(true);
     }
-    setPlaying((playing) => !playing);
   }
+
+  useEffect(() => {
+    document.addEventListener('click', playMusic);
+    function playMusic() {
+      clickPlay();
+      document.removeEventListener('click', playMusic);
+    }
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -29,10 +36,6 @@ export default function Home() {
         {/* TODO: change icon */}
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <button onClick={() => clickPlay()} className={styles.play}>
-        {`${playing ? 'Pause' : 'Play'} the theme song from the hit Daytime Emmy Award winning 1990s television show Might Morphin Power Rangers while you browse.`}
-      </button>
 
       <main className={styles.main}>
         

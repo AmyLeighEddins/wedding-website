@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import '../styles/globals.css'
+import { AppWrapper } from '../context/context.js';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -7,7 +8,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=0.4"/>
       </Head>
-      <Component {...pageProps} />
+      <AppWrapper>
+        <Component {...pageProps} />
+      </AppWrapper>
     </>
   )
 }
