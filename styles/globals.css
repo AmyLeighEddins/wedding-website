@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'Comic Sans local';
+  src: url('/COMIC.ttf');
+  font-style: normal;
+}
+
 html,
 body, 
 button {
   padding: 0;
   margin: 0;
-  font-family: "Comic Sans MS", "Comic Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Sans local", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: url('/johmy.gif');
   cursor: url('/cursor.png'), auto;
