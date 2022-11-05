@@ -1,7 +1,11 @@
 @font-face {
-  font-family: 'Comic Sans local';
-  src: url('/COMIC.ttf');
-  font-style: normal;
+  font-family: "Comic Sans MS webfont"; 
+  src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot"); 
+  src: url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix") format("embedded-opentype"), 
+      url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2") format("woff2"), 
+      url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff") format("woff"), 
+      url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf") format("truetype"), 
+      url("//db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS") format("svg"); 
 }
 
 html,
@@ -9,7 +13,7 @@ body,
 button {
   padding: 0;
   margin: 0;
-  font-family: "Comic Sans MS", "Comic Sans", "Comic Sans local", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Sans MS webfont", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: url('/johmy.gif');
   cursor: url('/cursor.png'), auto;
