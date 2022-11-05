@@ -11,7 +11,7 @@ export default function Party() {
       <Sidebar />
       <Content title='Wedding Party'>
         <div className='construction'>
-          <Image src='/construction.gif' width={400} height={200} />
+          <Image src='/construction.gif' alt='under construction' width={400} height={200} />
         </div>
       </Content>
     </div>

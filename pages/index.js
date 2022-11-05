@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 
 import { useAppContext } from '../context/context';
 import { links } from '../data/common'
@@ -13,12 +13,12 @@ export default function Home() {
     typeof Audio !== "undefined" ? new Audio("PowerRangers.mp3") : undefined
   );
 
-  const clickPlay = () => {
+  const clickPlay = useCallback(() => {
     if (!playing) {
       musicPlayer.current?.play();
       setPlaying(true);
     }
-  }
+  }, [playing, setPlaying]);
 
   useEffect(() => {
     document.addEventListener('click', playMusic);
@@ -26,7 +26,7 @@ export default function Home() {
       clickPlay();
       document.removeEventListener('click', playMusic);
     }
-  }, [])
+  }, [clickPlay])
 
   return (
     <div className={styles.container}>
