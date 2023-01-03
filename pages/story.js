@@ -10,9 +10,9 @@ export default function Story() {
     <div className='subPage'>
       <Sidebar />
       <Content title='Our Story'>
-        <div className='construction'>
-          <Image src='/construction.gif' alt='under construction' width={400} height={200} />
-        </div>
+        <video width='100%' height='auto' autoPlay loop muted>
+          <source src='/JohmyBeldins.mp4' type='video/mp4'/>
+        </video>
       </Content>
     </div>
   )

@@ -49,6 +49,19 @@ a {
   overflow: hidden;
 }
 
+.title {
+  margin: 1rem 1rem 1rem;
+  text-align: center;
+  color: #8000ff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.bigTitle {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .construction {
   text-align: center;
 }
