@@ -17,7 +17,7 @@ export default function Party() {
         </div>
         <div className='title'>
           {bridesmates.map((mate, index) => (
-            <div className={index === 0 ? 'bigTitle' : ''}>{mate}</div>
+            <div className={index === 0 ? 'bigTitle' : ''} key={mate}>{mate}</div>
           ))}
         </div>
         <video width='100%' height='auto' autoPlay loop muted>
@@ -28,7 +28,7 @@ export default function Party() {
         </div>
         <div className='title'>
           {groomsmen.map((man, index) => (
-            <div className={index === 0 ? 'bigTitle' : ''}>{man}</div>
+            <div className={index === 0 ? 'bigTitle' : ''} key={man}>{man}</div>
           ))}
         </div>
         <video width='100%' height='auto' autoPlay loop muted>
