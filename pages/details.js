@@ -15,20 +15,20 @@ export default function Details() {
         <div className={styles.container}>
           <div className={styles.titleMain}>
             <Image src='/rsvp3.gif' alt='invited' width={200} height={200} />
-            <Image src='/invited.png' alt='invited' width={800} height={100} />
+            <Image src='/invited.webp' alt='invited' width={800} height={100} />
             <Image src='/rsvp3.gif' alt='invited' width={200} height={200} />
           </div>
 
           <div className={styles.names}>{`${details.decorationLeft}${details.names}${details.decorationRight}`}</div>
           
           <div className={styles.title}>
-            <Image src='/on.png' alt='on' width={100} height={60} />
+            <Image src='/on.webp' alt='on' width={100} height={60} />
           </div>
           <div className={styles.descMed}>{details.when.date}</div>
           <div className={styles.descMed}>{details.when.time}</div>
 
           <div className={styles.title}>
-            <Image src='/at.png' alt='at' width={100} height={60} />
+            <Image src='/at.webp' alt='at' width={100} height={60} />
           </div>
           <div className={styles.descSml}>{details.where.name}</div>
           <div className={styles.descSml}>{details.where.address}</div>
@@ -36,17 +36,17 @@ export default function Details() {
           <div className={styles.descXSm}>{details.where.gated}</div>
 
           <div className={styles.title}>
-            <Image src='/rsvp.png' alt='rsvp' width={200} height={60} />
+            <Image src='/rsvp.webp' alt='rsvp' width={200} height={60} />
           </div>
           <div className={styles.descSml}>{details.rsvp}</div>
 
           <div className={styles.title}>
-            <Image src='/attire.png' alt='attire' width={275} height={60} />
+            <Image src='/attire.webp' alt='attire' width={275} height={60} />
           </div>
           <div className={styles.descSml}>{details.dressCode}</div>
 
           <div className={styles.title}>
-            <Image src='/reception.png' alt='reception' width={425} height={60} />
+            <Image src='/reception.webp' alt='reception' width={425} height={60} />
           </div>
           <div className={styles.descSml}>{details.reception}</div>
 
