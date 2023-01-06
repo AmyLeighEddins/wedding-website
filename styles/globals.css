@@ -75,6 +75,16 @@ a {
   padding-bottom: 5px;
 }
 
+.colorParagraph {
+  color: rgb(19, 193, 199);
+  background-color: rgb(70, 22, 102);
+  font-size: large;
+  font-weight: bold;
+  text-indent: 35px;
+  padding: 7px 15px;
+  margin: 15px 0px;
+}
+
 .rainbowText:hover, .rainbowTextTitle {
   -webkit-animation: rainbow 2s infinite;
   animation: rainbow 2s infinite;

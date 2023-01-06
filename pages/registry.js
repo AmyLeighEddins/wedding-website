@@ -1,5 +1,3 @@
-import styles from '../styles/Registry.module.css';
-
 import { charities, explanation } from '../data/registry';
 
 import Sidebar from './components/Sidebar.js';

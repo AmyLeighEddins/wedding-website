@@ -1,7 +1,5 @@
 import Image from 'next/image';
 
-import styles from '../styles/Party.module.css';
-
 import { bridesmates, groomsmen } from '../data/party.js';
 
 import Sidebar from './components/Sidebar.js';
