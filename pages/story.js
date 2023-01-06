@@ -12,8 +12,8 @@ export default function Story() {
           <source src='/JohmyBeldins.mp4' type='video/mp4'/>
         </video>
         <div className="colorParagraph">
-          {story.map((paragraph) => (
-            <p>{paragraph}</p>
+          {story.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
           ))}
         </div>
       </Content>
