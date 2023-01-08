@@ -15,7 +15,7 @@ export default function Details() {
         <div className={styles.container}>
           <div className={styles.titleMain}>
             <Image src='/rsvp3.gif' alt='invited' width={200} height={200} />
-            <Image src='/invited.webp' alt='invited' width={800} height={100} />
+            <Image src='/invited.webp' alt='invited' width={800} height={135} />
             <Image src='/rsvp3.gif' alt='invited' width={200} height={200} />
           </div>
 
