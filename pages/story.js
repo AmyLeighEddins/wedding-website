@@ -8,7 +8,7 @@ export default function Story() {
     <div className='subPage'>
       <Sidebar />
       <Content title='Our Story'>
-        <video width='100%' height='auto' autoPlay loop muted>
+        <video width='100%' height='auto' autoPlay loop muted playsInline>
           <source src='/JohmyBeldins.mp4' type='video/mp4'/>
         </video>
         <div className="colorParagraph">

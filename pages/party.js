@@ -18,7 +18,7 @@ export default function Party() {
             <div className={index === 0 ? 'bigTitle' : ''} key={mate}>{mate}</div>
           ))}
         </div>
-        <video width='100%' height='auto' autoPlay loop muted>
+        <video width='100%' height='auto' autoPlay loop muted playsInline>
           <source src='/Bridesmates.mp4' type='video/mp4'/>
         </video>
         <div className='title'>
@@ -29,7 +29,7 @@ export default function Party() {
             <div className={index === 0 ? 'bigTitle' : ''} key={man}>{man}</div>
           ))}
         </div>
-        <video width='100%' height='auto' autoPlay loop muted>
+        <video width='100%' height='auto' autoPlay loop muted playsInline>
           <source src='/Groomsmen.mp4' type='video/mp4'/>
         </video>
       </Content>
