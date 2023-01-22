@@ -48,7 +48,7 @@ export default function Home() {
             <Link href={link.href} key={link.title}>
               <div className={styles.card}>
                 <div className='rainbowText'>
-                  <Image src={link.image} alt={link.title} width={500} height={500} />
+                  <Image src={link.image} alt={link.title} width={500} height={500} priority={true} />
                   <div>{link.title}</div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ export default function Party() {
       <Sidebar />
       <Content title='Wedding Party'>
         <div className='title'>
-          <Image src='/BridesmatesText.gif' alt='Our Story' width={600} height={150} />
+          <Image src='/BridesmatesText.gif' alt='Our Story' width={600} height={150} priority={true} />
         </div>
         <div className='title'>
           {bridesmates.map((mate, index) => (
@@ -22,7 +22,7 @@ export default function Party() {
           <source src='/Bridesmates.mp4' type='video/mp4'/>
         </video>
         <div className='title'>
-          <Image src='/GroomsmenText.gif' alt='Our Story' width={600} height={150} />
+          <Image src='/GroomsmenText.gif' alt='Our Story' width={600} height={150} priority={true} />
         </div>
         <div className='title'>
           {groomsmen.map((man, index) => (
