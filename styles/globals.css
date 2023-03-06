@@ -164,6 +164,7 @@ a {
 
 .text-area {
   background-color: limegreen;
+  color: purple;
   border: 7px inset purple;
   padding: 1em;
   position: relative;
